@@ -1,0 +1,10 @@
+SELECT TOP (1000) [USERID]
+      ,[USERNAME]
+      ,[PASSCODE]
+      ,[ROLE]
+  FROM [FORUM_PROJECT].[dbo].[USERS]
+
+SELECT TOP (1000) [FORUMID]
+      ,[TITLE]
+      ,[POST]
+  FROM [FORUM_PROJECT].[dbo].[FORUM]
