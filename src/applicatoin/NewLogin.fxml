@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.control.PasswordField?>
+
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.layout.VBox?>
+
+
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+
+  <columnConstraints>
+
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+
+  </columnConstraints>
+
+  <rowConstraints>
+
+    <RowConstraints />
+
+    <RowConstraints maxHeight="267.0" minHeight="10.0" prefHeight="267.0" vgrow="SOMETIMES" />
+
+    <RowConstraints maxHeight="127.0" minHeight="0.0" prefHeight="104.5" vgrow="SOMETIMES" />
+
+      <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="28.5" vgrow="SOMETIMES" />
+
+  </rowConstraints>
+
+   <children>
+
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+
+         <children>
+
+            <Label text="UserName" />
+
+            <Label text="Password" />
+
+            <Label text="Re-enter Password" />
+
+            <Label fx:id="error2" text="Error Message 2" textFill="RED" visible="false" />
+
+         </children>
+
+      </VBox>
+
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+
+         <children>
+
+            <TextField fx:id="userField" />
+
+            <PasswordField fx:id="passwordField" />
+
+            <PasswordField fx:id="confirmPassword" />
+
+            <Button mnemonicParsing="false" onAction="#CreateNewUser" text="Create New User" />
+
+            <Button mnemonicParsing="false" onAction="#CancelNewUser" text="Cancel " />
+
+         </children>
+
+      </VBox>
+
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+
+         <children>
+
+            <Label prefHeight="17.0" prefWidth="329.0" text="Hello new User enter a username and a password." wrapText="true" />
+
+            <Label text="Make sure your password contains no spaces." />
+
+            <Label fx:id="errorLine" textFill="#f20404" />
+
+         </children>
+
+      </VBox>
+
+   </children>
+
+</GridPane>
